@@ -8,17 +8,22 @@
     <script src="phonegap.js" type="text/javascript"></script>
     <script src="mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
 	<script src="mobile/jquery.mobile-1.2.1.min.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8">
+   
 <head>
     <title>PhoneGap-Beispiel</title>
-  
-     function onLoad(){
-          document.addEventListener("deviceready", onDeviceReady, true);
-     }
-     function onDeviceReady(){
-          navigator.notification.alert("PhoneGap funktioniert!");
-     }
-  </script>
+	  <script type="text/javascript" charset="utf-8">
+	 	 document.addEventListener("DOMContentLoaded", function () {
+	  	 alert("PhoneGap ist eine tolle Lösung!")
+	  }, false);
+	function alertAusgabe() {
+	  alert("PhoneGap ist eine tolle Lösung!");
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+	alert("Ja, PhoneGap ist eine tolle Lösung für die Android-Entwicklung!");
+	document.getElementById("magMich").
+	addEventListener("click", alertAusgabe, false);
+	}, false);
+	</script>
   </head>
   <body onload="onLoad();">
        <h1>Herzlich Willkommen bei PhoneGap</h1>
